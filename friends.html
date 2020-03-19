@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--https://fontawesome.com/ 에 가입하고 아래 문자를 받았음-->
     <script src="https://kit.fontawesome.com/3d8acbbd7e.js" crossorigin="anonymous"></script>
-    <title>Chats Kakao Clone</title>
+    <title>Friends Kakao Clone</title>
   </head>
   <body>
     <!-- .status-bar -->
@@ -24,25 +24,44 @@
     </div>
     <header class="header">
       <!-- .header__header-column*2 -->
-      <div class="header__header-column"><h1 class="header__title">Chat</h1></div>
+      <div class="header__header-column"><h1 class="header__title">Friends</h1></div>
       <div class="header__header-column">
         <span class="header_icon"> <i class="fas fa-search"></i> </span>
-        <span class="header_icon"> <i class="far fa-comment"></i> </span>
         <span class="header_icon"> <i class="fas fa-cog"></i> </span>
       </div>
     </header>
-    <main class="chats">
-      <ul class="chats_list">
-        <li class="chats_chat chat">
-          <a href="chat.html">
-            <div class="chat__column">
-              <img src="images/avatar.jpg" class="chat__avatar g-avatar" />
-              <div class="chat__content">
-                <span class="chat__suername">Lynn</span> <span class="chat__preview">Going Home</span>
-              </div>
+    <main class="friends">
+      <header class="frineds_header">
+        <div class="friends_friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avater friend__avatar" />
+            <div class="friend_content">
+              <span class="friend_name"> Choi Hung Hwan </span> <span class="friend__status"> egiskorea.co </span>
             </div>
-            <div class="chat__column"><span class="chat_timestamp">Yesterday</span></div>
-          </a>
+          </div>
+        </div>
+      </header>
+      <div class="friends__plus">
+        <h5 class="friends__plus-title">Plus Friend</h5>
+        <div class="friends_friend friend">
+          <div class="friend_column">
+            <img src="images/avatar.jpg" class="g-avater friend__avatar" />
+            <div class="friend_content"><span class="friend_name"> Plus Friend </span></div>
+          </div>
+        </div>
+      </div>
+      <ul class="frineds__list">
+        <h5 class="frineds_title">Friends 14</h5>
+        <li class="friends_friend friend friend--lg">
+          <div class="friend_column">
+            <img src="images/avatar.jpg" class="g-avater friend__avatar" />
+            <div class="friend_content">
+              <span class="friend_name"> Choi Hung Hwan </span> <span class="friend__status"> egiskorea.co </span>
+            </div>
+          </div>
+          <div class="frined__column">
+            <div class="friend__now-listing"><span>FTISLAND (FT NomadCoders)</span> <i class="fas fa-play"></i></div>
+          </div>
         </li>
       </ul>
     </main>
@@ -50,10 +69,10 @@
       <ul class="nav__list">
         <!--li.nav__list-item*4>a.nav_list-link -->
         <li class="nav__list-item">
-          <a href="friends.html" class="nav_list-link"> <i class="far fa-user"></i> </a>
+          <a href="friends.html" class="nav_list-link"> <i class="fas fa-user"></i> </a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav_list-link"> <i class="fas fa-comment"></i> </a>
+          <a href="index.html" class="nav_list-link"> <i class="far fa-comment"></i> </a>
         </li>
         <li class="nav__list-item">
           <a href="find.html" class="nav_list-link"> <i class="fas fa-search"></i> </a>

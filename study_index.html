@@ -1,0 +1,594 @@
+<!--- HTML5 기본 소스
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title></title>
+        <style>
+        </style>
+    </head>
+
+    <body>
+
+    </body>
+</html>
+-->
+
+
+
+<!-- <이름 속성="값">내용</이름> -->
+<!-- <name attribute="value">Context</name>  -->
+<!---
+<a href="http://google.com" target="_blank">Go to google</a>
+-->
+
+<!--
+<h1>This is my big title</h1>  semantic 태그로 큰 글씨
+<header>This is an important header</header> semantic태그로 뭔가 뜻이 있는 태그  
+<div>Whatever</div> non-semantic 태그 즉 의미가 없는 태그 div는 박스와 같은 태그로 그 안에 내용물을 넣는다
+<span>something else</span> 역시 non-semantic 태그로 텍스트를 위한 컨테이너
+<h6>this is my small title</h6>
+-->        
+
+<!-- head에 대한 설명
+<!DOCTYPE html> //이문장은 html 이다
+//위문장은 열고 닫지는 않는다 self-contained 태그로 이 태그는 그 자체로 정보를 제공한다.
+<html>
+    <head> //head 정보는 사용자에게 보이지 않음 브라우저를 위한 정보
+        <meta charset="utf-8"> //meta 태그: 추가정보 로 트위터,네이버,페이스북 등 특정 플랫폼을 위한 속성도 존재함 
+        <meta name="author" content="Blade Coders">
+        <meta name="description" content="Wecole to my Kakao Clone"> //포털 검색시 간략 설명 내용
+        <title>Tis is my title</title>
+    </head>
+    <body>
+        <section>
+            //id 가 해당 태그를 유니크 하게 만드는 키, class는 여러개의 id를 묶은 분류
+            <header id="headerNumberOne" class="defaultHeader"> 
+                <h1>Title of a section</h1>
+            </header>
+        </section>
+        <div>
+            <header id="differentHeader" class="defaultHeader">
+                Title of the unknown contaier
+            </header>
+        </div>
+        
+        
+
+    </body>
+</html>
+-->
+
+<!-- CSS 연결 방법
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Mixin' CSS and HTML</title>
+        //-- Html 문장속에 직업 넣는 방법이 있지만 권장하지 않음 css파일로 별도로 작성하고 링크하는 방식 홯용
+        <style>
+            body{
+                background-color: red;
+            }
+        </style>
+        
+        //아래와 같은 링크 방식을 쓰면 해당 스타일이 링크된 모든 문서에 동시에 적용된다.
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+        <a href="#">Fake link</a>
+    </body>
+</html>
+-->
+
+
+
+
+<!--- Box 설명
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Box Model</title>
+        <style>
+            body,html{
+                padding:0;
+                margin:0;
+                background-color: green;
+                height: 100%;
+            }
+            .box{
+                background-color: yellow;
+                width: 50%;
+                height: 50%;
+                padding-top: 50px; 
+                padding-left: 50px; 
+                /* padding: 20px 10px; 상하 20, 좌우 10 */
+                /* padding: 10px 20px 30px 40px; 상 우 하 좌 시계 방향으로 */
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            .inside-box{
+                background-color: blue;
+                width: 50%;
+                height: 50%;
+                border-width:5px ;
+                border-color: red;
+                border-style: dashed;
+                border:5px dashed red; /* 위 세문장과 동일한 효과 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="inside-box"></div>
+        </div>
+    </body>
+</html>
+-->
+
+<!-- 블록 강좌-->
+<!--블록은 옆에 다른 element가 위치하는 것을 허용하지 않음-->
+<!--옆으로 위치하는 블록을 inline block이라고 함-->
+<!--박스는 블록이거나 인라인블록 둘 중 하나여야 함-->
+<!--
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Inline Example</title>
+        <style>
+            .box{
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                border: 2px solid black ;
+                display: inline-block; /*블록이 옆으로 위치함 */
+                display: inline; /* 모든 속성을 지운다 블록이 사라짐 */
+                display: block; /* 디폴트 값 으로 위에서 아래로 블록을 만듬 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </body>
+</html>
+-->
+<!--position연습-->
+<!--position은 -->
+<!--static : 디폴트-->
+<!--fixed : 고정 어디든 오버랩해서 계속 해당위치에 고정시키기 위한 것-->
+<!--absolute는 elative에 상대적으로 위치를 잡는것 만약 relative 포지션이 없을 경우, absolute는 문서의 본문 body에 맞춰서 본문을 잡는다-->
+<!--absolute포지션을 부모 element에 상대적으로 사용하려면 부모 element에게 relative포지션을 먼저 설정해야 한다.-->
+<!--즉 relative 설정된 부모를 따라다닌다. 없으면 body를 따라 다니고-->
+<!--
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title></title>
+        <style>
+            body,html{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                height: 400%;
+                background-color: red;
+            }
+            /* position fixed 에제
+            #boxOne{
+                height: 300px;
+                width: 300px;
+                border: 2px solid black ;
+                background-color: yellow;
+                position:static; //디폴트 값 
+            }
+            #boxTwo{
+                height: 300px;
+                width: 300px;
+                border: 2px solid black ;
+                background-color: green;
+                position: fixed;  //페이지를 스크롤 해도 그대로 고정되어 있음
+                top:10px; //위에서 10픽셀 떨어지고 고정 그외 left, right, bottom이 있음
+            }
+            */
+            .abs-box{
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+                position: relative;
+            }
+            .abs-child{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute; /* 포지션 relative에 상대적으로 위치를 잡는것 만약 relative 포지션이 없을 경우, absolute는 문서의 본문 body에 맞춰서 본문을 잡는다
+                right: 10px; /*오른쪽에 10 pixel */
+                top:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        //position fixed 예
+        //<div id="boxOne">
+        //    <div class="box-child"></div>
+        //</div>
+        //<div id="boxTwo">
+        //    <div class="box-child"></div>
+        //</div>
+        
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+    </body>
+</html>
+-->
+
+<!--Flex 강좌-->
+<!--
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Flex</title>
+        <style>
+            html,body{
+                height: 100%;
+            }
+            .father{
+                display:flex; /*부모 박스에만 적용하면 자식 박스들이 적용 됨 */
+                /* justify-content 는 수평 중심으로 정렬, align-items는 수직 중심으로 정렬*/
+                justify-content: center; /* 좌우 중심*/
+                align-items: center; /*좌우상하 중심*/
+                align-items: flex-end; /*밑에 맞춰셔 */
+                align-items: flex-start;/*위에 맞춰서 */
+                justify-content: space-between; /*좌우를 기준으로 같은 간격으로*/
+                justify-content: space-around;  /*좌우 여백도 같은 간격으로 정렬 */
+                height: 100%;
+                /*flex-direction: column; /*defalt 값은 row임, 이값이 설정되면 justify는 수직으로 aling은 수평으로 적용됨*/
+                /*flex-wrap:wrap; /* 기본은 사이즈를 줄이면 박스의 간격이 조절되지만 이 옵션을 주면 자동으로 아래쪽으로 생성됨 default 는 no wrap */
+                flex-direction: row-reverse; /* 박스 순서를 반대로 정렬 */
+                flex-direction: column-reverse; /*위에서 아래로 반대로 정렬 */
+                flex-wrap: wrap-reverse;
+            }
+            .box{
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                margin-right: 7px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="father">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+        </div>
+    </body>
+</html>
+
+-->
+
+<!--가상 selector 강좌 1
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Selectors and Pseudo Selectors</title>
+        <style>
+            .submit{
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class "container">
+            <div class "box"></div>
+            <div class "box"></div>
+            <div class "box">
+                <input type="password">
+                <input type="submit" class="submit">
+            </div>
+        </div>
+    </body>
+</html>
+-->
+
+<!--가상 selector 강좌 2
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Selectors and Pseudo Selectors</title>
+        <style>
+            input[type="submit"]{ /*위 코드와 동일한 효과 , 궅이 id,class없이도 설정하는 , 이런 방식을 pseudo-selector(가상 셀럭터)를 통해 선택한다고 함 */
+                background-color: red;
+            }
+            /*
+            input[type="password"]{
+                background-color: green;
+            }
+            */
+            input[required="required"]{ /*밑에 html문장에서 required 옵션은 필수 입력창 */
+                background-color: blue;
+            }
+            input{ /*둘다 변경됨 */
+                border: 1px solid yellow;
+            }
+            input + .box{
+                /*둘다 적용함 */
+            }
+            input > .box{
+                /* 최상위 box만 그밑에 다른 박스들이 있다면 해당 안됨 */
+            }
+            .box{
+                background-color: green;
+                display: block;
+                height: 100px;
+                border: 1px solid black;
+            }
+            .box:nth-last-child(2){ /* 2번째 박스 , 그외 "2n": 매 두번째마다 , "2n+1" : 두번째 하위 첫번째*/
+                background-color: yellow;
+            }
+            .box:last-child{ /* 마지막 박스 */
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class= "container">
+            <div class= "box">
+                <div class="box"></div>
+            </div>
+            <div class= "box"></div>
+            <div class= "box">
+                <input type="password" required="required">
+                <input type="submit">
+            </div>
+        </div>
+    </body>
+</html>
+-->
+
+<!--CSS states 강좌 
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>CSS States</title>
+        <style>
+            .box{
+                background-color: red;
+                font-size: 40px;
+            }
+            .box:hover{/*마우스가 element위에 올라오면*/
+                background-color: pink;
+            }
+            .box:active{ /* 마우스 클릭하면 */
+                background-color: pink;
+            }
+            .box:focus{
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <textarea class="box">lalalalalalalala</textarea>
+
+    </body>
+</html>
+-->
+
+<!--- Transitions 강좌 
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Transitions</title>
+        <style>
+            .box{
+                background-color: green;
+                color: white;
+                /*transition: background-color 0.5s ease-in-out; /*벼경색을 0.5초안에 변경 에니메이션은 ease-in-out*/
+                /*transition: color 0.5s ease-in-out; */
+                transition: all 0.5s ease-in-out ; /*모두 변경하고 싶다면 all */
+            }
+            /*
+            .box:hover{
+                background-color: red;
+                color : blue;
+            } */
+            .box:active{
+                background-color: red;
+                color : blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <span class="box">
+            Text
+        </span>
+    </body>
+</html>
+-->
+
+<!--Transformations 강좌
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Transformations</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: transform .5s ease-in-out;
+                /*transform: rotate(20deg)*/
+                /*여러가지 효과들
+                https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+                Keyword values 
+                transform: none;
+
+                Function values 
+                transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+                transform: perspective(17px);
+                transform: rotate(0.5turn);
+                transform: rotate3d(1, 2.0, 3.0, 10deg);
+                transform: rotateX(10deg);
+                transform: rotateY(10deg);
+                transform: rotateZ(10deg);
+                transform: translate(12px, 50%);
+                transform: translate3d(12px, 50%, 3em);
+                transform: translateX(2em);
+                transform: translateY(3in);
+                transform: translateZ(2px);
+                transform: scale(2, 0.5);
+                transform: scale3d(2.5, 1.2, 0.3);
+                transform: scaleX(2);
+                transform: scaleY(0.5);
+                transform: scaleZ(0.3);
+                transform: skew(30deg, 20deg);
+                transform: skewX(30deg);
+                transform: skewY(1.07rad);
+
+                Multiple function values 
+                transform: translateX(10px) rotate(10deg) translateY(5px);
+                transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+
+                Global values 
+                transform: inherit;
+                transform: initial;
+                transform: unset;
+            */
+            }
+            .box:hover{
+                /*transform:rotate(45deg)*/
+                transform:rotate(1turn) scale(.5,.5)
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
+-->
+
+<!--animation- 강좌 >
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Transformations</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: red;
+                animation: 1.5s scaleAndRotateSquare infinite ease-in-out; /*infinite무한 반복 */
+            }
+            @keyframes scaleAndRotateSquare { /*scaleAndRotateSquare : 사용자가 정의한 에니메이션 이름 */
+                /*
+                from{
+                    transform: none;
+                }
+                to{
+                    transform:rotate(1turn) scale(.5,.5)
+                } */
+                0%{
+                    transform: none;
+                }
+                50%{
+                    transform:rotate(1turn) scale(.5,.5);
+                    color: white; /*글자색이 바뀜 */
+                }
+                100%{
+                    transform: none;
+                    color: blue;
+                }              
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="box">test color</div>
+    </body>
+</html>
+-->
+
+<!--모바일 데스트탑 환경에 따라 다른 스타일 적용
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Media Queries</title>
+        <style>
+            body{
+                background-color: green;
+            }
+            @media screen and (min-width:320px) and (max-width:640px){ /*모바일로 바뀌면 스타일 변경*/
+                body{
+                    background-color: blue;
+                }
+                
+            }
+        </style>
+    </head>
+
+    <body>
+
+    </body>
+</html>
+-->

@@ -11,7 +11,7 @@ selector는 아래와 같이 여러개를 섞을 수 도 있음
 h1 .name{
 }
 */
-h1 {
+h1 { 
     color: green;
     font-size: 10px;
 }
