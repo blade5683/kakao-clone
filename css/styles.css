@@ -18,6 +18,7 @@ h1 .name{
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 * {
   /* 모든 아이템에 적용해서 */

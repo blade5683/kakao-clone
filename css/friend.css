@@ -1,0 +1,16 @@
+.friend {
+  /*background-color: red;  이런식으로 해당 객체가 어디있는지 눈으로 확인함*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 35%;
+}
+
+/*아래처럼 붙여쓰면 두 클래스 모두 적용한다는 의미 */
+.friend__avatar.g-avatar {
+  /* width: 70px; */
+}
