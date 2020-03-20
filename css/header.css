@@ -1,0 +1,27 @@
+.header {
+  display: flex; /*좌우로 배치  display div 블럭을 적용시킼낟.*/
+  justify-content: space-between;
+  align-items: center; /*위 아래 중앙으로 정렬 */
+  margin-bottom: 30px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 600; /*goole font에서 가져온것*/
+}
+
+.header .header_icon {
+  font-size: 20px;
+  margin-left: 20px; /* 해더에 있는 아이콘 사이의 간격을 두기 위해 왼쪽 마진을 둠 */
+  cursor: pointer; /*마우스 포인트 변경 */
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}

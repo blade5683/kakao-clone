@@ -1,0 +1,37 @@
+.nav {
+  position: fixed; /*위치 고정, 스크롤에 상관없이 고정 위치  : 아래 width:100% 와 함께 사용해야 함*/
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px; /* 아래 붙어 고정 , 만약에 top:0px; 라고 정의하면 제일 상단에 고정됨 */
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute; /* relative설정된 부모를 따라 다닌다  메세지 아이콘 위에 떠 있기 위해 */
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  color: white;
+  background-color: #dc5846;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /*경계를 둥글게 */
+}

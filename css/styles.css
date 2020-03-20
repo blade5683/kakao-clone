@@ -1,0 +1,41 @@
+/*
+selector {
+    property-name: value;
+}
+selector 는 태그,링크,문단,헤더,푸터 모든 태그이름 이 해당되며 
+         id는 앞에 "#"을 붙이고 , class는 앞에 "."을 붙인다.
+            h1{}
+            #name{}
+            .name{}
+selector는 아래와 같이 여러개를 섞을 수 도 있음 
+h1 .name{
+}
+*/
+
+@import "reset.css";
+/* google font 검색해서 OpenSans폰트 +,  custmize에서 regular400, bold 700선택 후 embed메뉴선택하면 아래 링크 나옴 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+
+* {
+  /* 모든 아이템에 적용해서 */
+  box-sizing: border-box; /*padding이 컨텐츠를 밀어내는 것을 못하게 함 */
+  /*박스에 경계값을 주면 박스 사이즈가 작아지는 것을 막기위해 html이 경계값 만큼 박스 사이즈를 자동으로 늘림
+    박스 오른쪽이 안보이는 현상 발생, 이것을 못하게 하는 옶션
+    예를 들어 가로 크기 300의 boxpadding 값을 30을 주면 box크기가 330으로 변경되는데 이것을 못하게 함
+    즉 padding이 컨텐츠를 밀어내는 것을 못하게 함  */
+}
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  /*Open Sans폰트가 있으면 쓰고 없으면 뒤에 열거된 순서대로 사용 */
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit; /*부모와 같은 색상*/
+}

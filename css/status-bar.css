@@ -1,0 +1,15 @@
+.status-bar {
+  display: flex; /*좌우로 배치 */
+  justify-content: space-between; /*좌우를 기준으로 같은 간격으로*/
+  margin-bottom: 30px;
+  opacity: 0.7; /*색의 80%만 보여줌 즉 연하게 만듬 */
+}
+
+.status-bar i {
+  /*status-bar i(아이콘 태그)들을 변경한다. */
+  font-size: 14px;
+}
+
+.status-bar .staues-bar_battery-level {
+  margin-left: 5px; /*배터리 용량 표기 부분 앞쪽에 여분을 조금 줌 */
+}
